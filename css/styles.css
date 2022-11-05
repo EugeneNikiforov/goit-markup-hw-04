@@ -11,6 +11,9 @@
     /* logo color */
     --logo-black: #000;
     --logo-light-blue: #2196F3;
+    /* icon color */
+    --icon-gray: #AFB1B8;
+    --icon-white: #fff;
 }
 body {    
     font-family: 'Roboto', sans-serif;
@@ -113,7 +116,7 @@ img {
 .main {
     background: var(--bgnd-gray-main);
     background-image: url(../img/bgnd-head.jpg);
-    min-width: 1600px;
+    max-width: 1600px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -262,6 +265,16 @@ img {
     height: 44px;
     border-radius: 50%;
     background-color: var(--white-color);
+    fill: var(--icon-gray);
+}
+.crew-socials-link:hover,
+.crew-socials-link:focus {
+    fill: var(--icon-white);
+    background-color: var(--selection-color);
+}
+.icon {
+    width: 20px;
+    height: 20px;    
 }
 
 /* regular customers */
@@ -270,6 +283,22 @@ img {
 }
 .customers-list {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.customers-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-gray);
+    border-radius: 4px;
+}
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid var(--selection-color);
 }
 
 /* contacts */
