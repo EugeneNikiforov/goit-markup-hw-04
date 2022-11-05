@@ -2,7 +2,7 @@
     --bgnd-gray: #2F303A;
     --bgnd-light-gray: #F5F4FA;
     --dark-gray: #212121;
-    --light-gray: #757575;   
+    --primary-gray: #757575;   
     --selection-color: #2196F3;
     --white-color: #FFF;
     --white-bord: #ECECEC;
@@ -13,7 +13,7 @@
 }
 body {    
     font-family: 'Roboto', sans-serif;
-    color: var(--light-gray);        
+    color: var(--primary-gray);        
 }
 h1, h2, h3, p {
     margin-top: 0;
@@ -99,7 +99,7 @@ img {
     font-size: 14px;
     line-height: 1.1429;
     letter-spacing: 0.02em;
-    color: var(--light-gray);
+    color: var(--primary-gray);
     margin-left: auto;
 }
 .contact-link:hover, .contact-link:focus {
@@ -239,6 +239,12 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+/* regular customers */
+.title-customers {
+    margin-bottom: 50px;
+}
+.customers-list
 
 /* contacts */
 .footer {
