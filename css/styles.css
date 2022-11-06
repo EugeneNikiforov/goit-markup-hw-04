@@ -101,7 +101,8 @@ img {
     margin-left: auto;
     gap: 50px;
 }
-.contact-link {    
+.contact-link {
+    position: relative;    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1429;
@@ -109,15 +110,24 @@ img {
     color: var(--light-gray);
     margin-left: auto;
 }
+.contact-link::before {
+    display: inline-block;
+    content: "";    
+    margin-left: 10px;
+    width: 16px;
+    height: 12px;
+}
 .contact-link:hover, .contact-link:focus {
     color: var(--selection-color);
 }
 
 /* main_content */
 .main {
+    display: block;
+    align-items: center;
+    justify-content: center;
     background: var(--bgnd-gray-main);
-    background-image: url(../img/bgnd-head.jpg);
-    max-width: 1600px;
+    background-image: url(../img/bgnd-head.jpg);    
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -175,7 +185,26 @@ img {
 }
 .features-item:not(:last-child) {
     margin-right: 30px;
-} 
+}
+.features-icon-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: var(--bgnd-light-gray);
+    border-radius: 4px;
+    fill: var(--dark-gray);
+}
+.features-icon {
+    width: 70px;
+    height: 70px;
+}
+/* selection icons */
+/* .features-icon:hover, .features-icon:focus {
+    fill: var(--selection-color);
+}  */
 .features-title {
     font-weight: 700;
     font-size: 14px;
@@ -313,6 +342,11 @@ img {
     background-color: var(--bgnd-gray);
 }
 .footer-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 70px;
+}
+.footer-header {
     display: block;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -346,6 +380,22 @@ img {
 
 /* socials */
 .footer-socials {
+    display: flex;
+    width: 206px;
+    flex-wrap: wrap;
+    padding-top: 72px;
+    padding-bottom: 100px;
+}
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1429;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+.footer-socials-list {
     display: flex;
     align-items: center;
     justify-content: center;

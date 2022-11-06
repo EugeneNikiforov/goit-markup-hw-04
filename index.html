@@ -28,7 +28,9 @@
             </nav>
             <!-- mail_tel --> 
             <ul class="contact-list">
+                <!-- <svg class="icon icon-envelope"><use xlink:href="./img/icons.svg#icon-envelope"></use></svg> -->
                 <li><a href="mailto:info@devstudio.com" class="contact-link link">info@devstudio.com</a></li>
+                <!-- <svg class="icon icon-smartphone"><use xlink:href="./img/icons.svg#icon-smartphone"></use></svg> -->
                 <li><a href="tel:+380961111111" class="contact-link link">+38 096 111 11 11</a></li>
             </ul>
         </div>                       
@@ -46,13 +48,29 @@
             <div class="container features-container">            
                 <h2 class="header-hidden">Особливості</h2>
                 <ul class="features">
-                    <li class="features-item"><h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                    <li class="features-item">
+                        <div class="features-icon-style">
+                            <svg class="features-icon"><use xlink:href="./img/icons.svg#icon-antenna"></use></svg>
+                        </div>                        
+                        <h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p></li>
-                    <li class="features-item"><h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h3>
+                    <li class="features-item">
+                        <div class="features-icon-style">
+                            <svg class="features-icon"><use xlink:href="./img/icons.svg#icon-clock"></use></svg>
+                        </div>                        
+                        <h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h3>
                         <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p></li>
-                    <li class="features-item"><h3 class="features-title">ПЛАНУВАННЯ</h3>
+                    <li class="features-item">
+                        <div class="features-icon-style">
+                            <svg class="features-icon"><use xlink:href="./img/icons.svg#icon-diagram"></use></svg>
+                        </div>                        
+                        <h3 class="features-title">ПЛАНУВАННЯ</h3>
                         <p>Так само консультація з широким активом значною мірою зумовлює.</p></li>
-                    <li class="features-item"><h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <li class="features-item">
+                        <div class="features-icon-style">
+                            <svg class="features-icon"><use xlink:href="./img/icons.svg#icon-astronaut"></use></svg>
+                        </div>                        
+                        <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p></li>
                 </ul>
             </div>                                                                                                                               
@@ -233,6 +251,7 @@
         <!-- Contacts -->
         <footer class="footer">
             <div class="container footer-container">
+                <div class="footer-header">
             <a class="web-logo" href="./index.html">Web<span class="footer-logo">Studio</span></a>
             <address>
                 <ul class="footer-list">
@@ -242,9 +261,11 @@
                     <li class="footer-item"><a href="tel:+380961111111" class="adress-list">+38 096 111 11 11</a></li>
                 </ul>             
             </address>
+            </div>
             <!-- Socials -->
-            <h3>приєднуйтесь</h3>
-            <ul class="footer-socials">
+            <div class="footer-socials">
+            <h3 class="footer-title">приєднуйтесь</h3>
+            <ul class="footer-socials-list">
                 <li>
                     <a class="link footer-socials-link" href="#" target="_blank" rel="noopener noreferrer">
                         <svg class="icon"><use xlink:href="./img/icons.svg#icon-instagram"></use></svg>
@@ -266,9 +287,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
-        <div>
-            
+            </div>
         </div>
         </footer>
     
