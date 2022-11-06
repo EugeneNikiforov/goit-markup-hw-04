@@ -12,6 +12,7 @@
     --logo-black: #000;
     --logo-light-blue: #2196F3;
     /* icon color */
+    --icon-dark: rgba(255, 255, 255, 0.1);
     --icon-gray: #AFB1B8;
     --icon-white: #fff;
 }
@@ -295,10 +296,16 @@ img {
     height: 92px;
     border: 1px solid var(--icon-gray);
     border-radius: 4px;
+    fill: var(--icon-gray);
 }
 .customers-link:hover,
 .customers-link:focus {
     border: 1px solid var(--selection-color);
+    fill: var(--selection-color);
+}
+.customers-icon {
+    width: 106px;
+    height: 60px;
 }
 
 /* contacts */
@@ -335,6 +342,30 @@ img {
 .adress-place:hover, 
 .adress-place:focus {
     color: var(--selection-color);
+}
+
+/* socials */
+.footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--icon-dark);
+    fill: var(--icon-white);
+}
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+    fill: var(--icon-white);
+    background-color: var(--selection-color);
 }
 
 /* portfolio */
