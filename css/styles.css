@@ -233,6 +233,9 @@ img {
 }
 
 /* occupation */
+.section-occupation {
+    padding-bottom: 94px;
+}
 .title-occupation {
     margin-bottom: 50px;
 }
